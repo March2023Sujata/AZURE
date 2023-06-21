@@ -20,7 +20,14 @@
 * Each Router will have Route table which are rules to forward the packets
 * Rules are written in terms of CIDR Ranges
 * Rules generally work only on network ids*
-![Preview](images/3.jpg)
+```
+    # is for my network
+    192.168.0.0/16
+    # is for any device from any network (all ip addresses)
+    0.0.0.0/0
+    # is for a specific device with ip 5.5.5.5
+    5.5.5.5/32
+```
 
 ## DHCP (Dynamic Host Configuration Protocol): 
 * DHCP server is responsible for assigning an ip address to the device connected to a network. DHCP can assign static ip to a device or a dynamic from free ip addresses available in network cidr range.
